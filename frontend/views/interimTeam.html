@@ -1,0 +1,75 @@
+<link href="../design/mycss/definebutton.css" rel="stylesheet">
+<link href="../design/mycss/definebranch.css" rel="stylesheet">
+
+
+
+
+<section id="contact">
+
+    <div class="section-content1">
+        <h1 class="section-header">level
+            <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">3</span>
+        </h1>
+        <h3>define interim team</h3>
+    </div>
+    <div class="contact-section">
+        <div class="container">
+            <form>
+                <div class="col-md-6 form-line">
+
+                    <span class="has-float-label">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="controls">
+                                    <div class="row">
+
+                                        <select ng-model-options="{ updateOn: 'change', debounce: { change: 0 } }" ng-change="changeTask_Emp(project.ID)" ng-model="project" ng-options="item.name for item in projects" class="input-xlarge"></select>
+                                        <label for="node-label" id="popup-node-id">selectproject</label>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="row">
+
+                                        <select  ng-model="task" ng-options="item.name for item in tasks" class="input-xlarge"></select>
+                                        <label for="node-label" id="popup-node-id">selecttask</label>
+                                    </div>
+                                    <div class="row">
+                                        <br>
+                                        <br>
+                                        <select ng-model="employee" ng-options="item.name for item in employees" class="input-xlarge"></select>
+                                        <label for="node-label" id="popup-node-id">selectemployee</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+
+                                    <button ui-sref="addnewTask" type="button" class="btn btn-magick btn-md btn3d">
+                                        <span class="glyphicon glyphicon-backward"></span>task
+                                    </button>
+                                    <button ng-click="addNewTeam()" type="button" class="btn btn-magick btn-md btn3d">
+                                        <span class="glyphicon glyphicon-thumbs-up"></span>ADD
+                                    </button>
+
+                                </div>
+                                <button ui-sref="ceopage" type="button" class="btn btn-magick btn-md btn3d">
+                                    <span class="glyphicon glyphicon-backward"></span>home
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </span>
+                </div>
+                </span>
+
+            </form>
+        </div>
+
+    </div>
+
+</section>

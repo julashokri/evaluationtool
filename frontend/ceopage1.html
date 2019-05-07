@@ -1,0 +1,374 @@
+<link href="../design/mycss/ceopage.css" rel="stylesheet">
+<link href="../design/mycss/ceo_dep.css" rel="stylesheet">
+<link href="../design/mycss/directeva.css" rel="stylesheet">
+<link href="../design/mycss/insertpeople.css" rel="stylesheet">
+<link href="../design/mycss/addnew.css" rel="stylesheet">
+<link href="../design/mycss/definebutton.css" rel="stylesheet">
+
+
+
+
+<script src="../design/mycontroller/ceopage.js"></script>
+<script src="../design/mycontroller/ceo_dep.js"></script>
+<script src="../design/mycontroller/directeva.js"></script>
+
+<!-- Include the above in your HEAD tag -->
+
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-lg-11 col-md-11 col-sm-8 col-xs-9 bhoechie-tab-container">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bhoechie-tab-menu">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active text-center">
+                        <h2 class="glyphicon glyphicon-hand-right"></h2>
+                        <br/>insert company
+                    </a>
+
+                    <a href="#" class="list-group-item text-center">
+                        <h2 class="glyphicon glyphicon-hand-right"></h2>
+                        <br/>define company
+                    </a>
+
+                    <a href="#" class="list-group-item text-center">
+                        <h2 class="glyphicon glyphicon-hand-right"></h2>
+                        <br/>insert person
+                    </a>
+
+                    <a href="#" class="list-group-item text-center">
+                        <h2 class="glyphicon glyphicon-hand-right"></h2>
+                        <br/>define evaluate
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+
+                <br>
+                <!-- insert company information -->
+                <div class="bhoechie-tab-content active">
+
+                    <center>
+
+                        <div class="container">
+                            <div class="main-login main-center">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-6 col-sm-offset-1" style="display: block;">
+                                            <span class="has-float-label">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text" id="node-label" ng-model="vat_number">
+                                                        <label for="node-lable" class=" control-label">vat number</label>
+
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-offset-2">
+                                            <div class="control-group">
+                                                <div class="controls col-lg-2 col-lg-offset-2">
+                                                    <input id="filebutton" name="filebutton" class="input-file" type="file">                                                <label class="control-label" for="filebutton">fast/model</label>
+                                                </input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row col-sm-12 col-sm-offset-2" style="display: block;">
+                                        <span class="has-float-label">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" id="node-label" ng-model="name">
+                                                    <label for="name" class=" control-label">Name</label>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="row col-sm-2 col-sm-offset-2" style="display: block;">
+                                        <span class="has-float-label">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="controls">
+                                                        <select ng-model="employee" ng-options="item.name for item in employees" class="input-xlarge"></select>
+                                                        <label for="node-label" id="popup-node-id">selectBoss</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="row form-group col-sm-4 col-lg-offset-3 ">
+                                        <br>
+                                        <button ng-click="addNewCompany()" type="button" class="btn btn-primary btn-md btn3d">
+                                            <span class="glyphicon glyphicon-plus"></span>ADD
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+
+                <!--define company(department/role/...) -->
+                <div class="bhoechie-tab-content">
+                    <center>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <tr>
+                            <th>
+                                <button ui-sref="addBranch" type="button" class="btn btn-primary btn-lg btn3d">
+                                    <span class="glyphicon glyphicon-ok"></span> Define Branch</button>
+                            </th>
+                            <th>
+                                <th>
+                                    <button ui-sref="" type="button" class="btn btn-primary btn-lg btn3d">
+                                        <span class="glyphicon glyphicon-ok"></span> Define Department</button>
+                                </th>
+                                <th>
+                                    <button ui-sref="" type="button" class="btn btn-primary btn-lg btn3d">
+                                        <span class="glyphicon glyphicon-question-sign"></span> Define Manager</button>
+                                </th>
+                                <th>
+                                    <button ui-sref="step" type="button" class="btn btn-primary btn-lg btn3d">
+                                        <span class="glyphicon glyphicon-gift"></span> Define Project</button>
+                                </th>
+                        </tr>
+                    </center>
+                    <!--h3 style="margin-top: 0;color:#55518a">
+                            <button class="btn btn-success" id="saveButton" type="button" ui-sref="addProject">
+                                    <label for="node-label" id="popup-node-id">Define Project</label>
+
+                    </h3-->
+                </div>
+                <!-- insert person -->
+                <div class="bhoechie-tab-content">
+                    <center>
+                        <div class="container">
+                            <!--div class="row main"-->
+                            <div class="row">
+                                <div class="main-login main-center">
+                                    <form>
+
+
+                                        <div class="row">
+                                            <div id="network-popUp33" class="row" style="display: block;">
+
+                                                <span class="has-float-label">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input class="form-control" type="text" id="node-label">
+                                                            <label for="node-lable" class=" control-label">ID</label>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </div>
+
+                                            <div id="network-popUp3" class="row" style="display: block;">
+
+                                                <span class="has-float-label">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="controls">
+                                                                <select ng-model-options="{ updateOn: 'change', debounce: { change: 0 } }" ng-change="changeDepart(branch.ID)" ng-model="branch"
+                                                                    ng-options="item.country +' / '+ item.city  for item in branches"
+                                                                    class="input-xlarge"></select>
+                                                                <!--select ng-model="branch" ng-options="item.country +' / '+ item.city  for item in branches"
+                                                                    class="input-xlarge"></select-->
+                                                                <button class="btn btn-success" id="saveButton" type="button" ui-sref="addnewDep">
+                                                                    <span class="glyphicon glyphicon-plus"></span>
+                                                                </button>
+                                                            </div>
+                                                            <label for="node-label" id="popup-node-id">select_Branch</label>
+
+                                                        </div>
+                                                    </div>
+
+                                                </span>
+                                                <!--select ng-model="branch" ng-options="item.ID for item in branches" class="input-xlarge"-->
+
+
+
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div id="network-popUp44" class="row" style="display: block;">
+
+                                                <span class="has-float-label">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input class="form-control" type="text" id="node-label">
+                                                            <label for="node-lable" class=" control-label">Name</label>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </div>
+
+
+                                            <div id="network-popUp4" class="row" style="display: block;">
+
+                                                <span class="has-float-label">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="controls">
+                                                                <select ng-model-options="{ updateOn: 'change', debounce: { change: 0 } }" ng-change="changeRole(department.ID)" ng-model="department"
+                                                                    ng-options="item.name for item in departments" class="input-xlarge"></select>
+                                                                <button class="btn btn-success" id="saveButton" type="button" ui-sref="addnewDep">
+                                                                    <span class="glyphicon glyphicon-plus"></span>
+                                                                </button>
+                                                            </div>
+                                                            <label for="node-label" id="popup-node-id">select_department</label>
+
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <span class="input-group-btn">
+
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div id="network-popUp55" class="row" style="display: block;">
+
+                                                <span class="has-float-label">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input class="form-control" type="text" id="node-label">
+                                                            <label for="email" class=" control-label">Email</label>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </div>
+
+                                            <div id="network-popUp5" class="row" style="display: block;">
+                                                <span class="has-float-label">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="controls">
+                                                                <select ng-model="role" ng-options="item.name for item in roles" class="input-xlarge"></select>
+                                                                <button class="btn btn-success" id="saveButton" type="button" ui-sref="addnewRole">
+                                                                    <span class="glyphicon glyphicon-plus"></span>
+                                                                </button>
+                                                            </div>
+                                                            <label for="node-label" id="popup-node-id">select_Role</label>
+
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-4 col-lg-offset-2 ">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="form-group col-lg-4 col-lg-offset-2 ">
+                                    <br>
+                                    <button ng-click="addNewEmployee()" type="button" class="btn btn-info btn-md btn3d">
+                                        <span class="glyphicon glyphicon-plus"></span>ADD
+                                    </button>
+
+                                    <!--button ng-click="addNewEmployee()" class="btn btn-primary btn-lg btn-block login-button">ADD</a-->
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+
+                <!-- evaluate -->
+                <div class="bhoechie-tab-content">
+                    <center>
+                        <div class="selected-item">
+                            <p>you selected department :
+                                <span>null</span>
+                            </p>
+                        </div>
+                        <!-- really tool should select department from db -->
+                        <div class="dropdown">
+                            <span class="selLabel">Select department</span>
+                            <input type="hidden" name="cd-dropdown">
+                            <!-- show dep from db-->
+                            <ul class="dropdown-list">
+                                <li data-value="1">
+                                    <span>dep A</span>
+                                </li>
+                                <li data-value="2">
+                                    <span>dep B</span>
+                                </li>
+                                <li data-value="3">
+                                    <span>dep C</span>
+                                </li>
+                                <li data-value="4">
+                                    <span>dep D</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                        <center>
+                            <div class="container">
+                                <div class="row">
+                                    <br>
+                                    <div class="col-md-6 col-md-offset-1">
+                                        <label class="col-md-8 col-md-offset-2 control-label">please enter employeeID</label>
+                                        <BR></BR>
+                                        <nav class="navbar navbar-default">
+                                            <div class="nav nav-justified navbar-nav">
+
+                                                <form class="navbar-form navbar-search" role="search">
+                                                    <div class="input-group">
+
+                                                        <!--input type="text" class="form-control"-->
+                                                        <INPUT class="form-control" id="txtNumber" placeholder="enter only number" onkeypress="return isNumberKey(event)" type="text"
+                                                            name="txtNumber">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-primary btn-search btn-info">
+                                                                <span class="glyphicon glyphicon-search"></span>
+                                                                <span class="label-icon">Search</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                        <center>
+                                <button ui-sref="autoevaluation" type="button" class="btn btn-primary btn-lg btn3d">
+                                        <span class="glyphicon glyphicon-ok"></span>EVALUATE</button>
+                            <!--h3 style="margin-top: 0;color:#55518a">
+                                <a ui-sref="autoevaluation" style="margin-top: 0;color:#55518a" target="_blank">evaluate</a>
+                            </h3-->
+                        </center>
+
+                    </center>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

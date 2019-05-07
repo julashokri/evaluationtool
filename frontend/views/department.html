@@ -1,0 +1,56 @@
+<link href="../design/mycss/definebutton.css" rel="stylesheet">
+<link href="../design/mycss/definebranch.css" rel="stylesheet">
+
+
+
+<center>
+    <section id="contact">
+
+        <div class="section-content">
+            <h1 class="section-header">insert
+                <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">DEPARTMENT</span>
+            </h1>
+            <h3>insert new depatment</h3>
+        </div>
+        <div class="contact-section">
+            <div class="container">
+                <form>
+                    <div class="col-md-6 form-line">
+
+                        <div class="form-group">
+                            <label for="node-lable" class=" control-label">name</label>
+                            <div class="input-group">
+                                <input class="form-control" type="text" id="node-label" ng-model="departName">
+                            </div>
+                        </div>
+                        <!--div class="form-group">
+                            <div class="input-group">
+                                <div class="controls">
+                                    <select ng-model-options="{ updateOn: 'change', debounce: { change: 0 } }" ng-change="changeHeader(branch.ID)" ng-model="branch"
+                                        ng-options="item.country +' / '+ item.city  for item in branches" class="input-xlarge"></select>
+                                    <label for="node-label" id="popup-node-id">select Branch</label>
+                                </div>
+                            </div>
+                        </div-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="controls">
+                                    <select ng-model="branch"  ng-options="addnewDep(branch.ID)" class="input-xlarge"></select>
+                                    <!--select ng-model="employee" ng-options="item.name for item in employees" class="input-xlarge"></select-->
+                                    <label for="node-label" id="popup-node-id">select department header</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-6 col-lg-offset-7">
+                            <button ui-sref="ceopage" type="button" class="btn btn-magick ">HOME
+                            </button>
+                            <button ng-click="addNewDepartment()" type="button" class="btn btn-magick ">ADD
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+</center>

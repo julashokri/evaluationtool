@@ -1,0 +1,358 @@
+@import "https://cdn.rawgit.com/tonystar/bootstrap-float-label/v4.0.0/dist/bootstrap-float-label.css";
+/*body{
+    background-color: #525252;
+}
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(129, 198, 238, 0.3) 20px 20px 20px;
+}*/
+#network-popUpsave {
+    display:none;
+    position:absolute;
+    top:70vh;
+    left:48vw;
+    z-index:234;
+    width:70px;
+    height:47px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+
+#network-popUp {
+    display:none;
+    position:absolute;
+    top:30vh;
+    left:10vw;
+    z-index:234;
+    width:490px;
+    height:220px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+#network-popUp0 {
+    display:none;
+    position:absolute;
+    top:18vh;
+    left:30vw;
+    z-index:234;
+    width:400px;
+    height:100px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+
+#network-popUp1 {
+    display:none;
+    position:absolute;
+    top:30vh;
+    left:55vw;
+    z-index:234;
+    width:490px;
+    height:220px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp2 {
+    display:none;
+    position:absolute;
+    top:30vh;
+    left:35vw;
+    z-index:234;
+    width:490px;
+    height:220px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+}
+
+#network-popUp3 {
+    display:none;
+    position:absolute;
+    top:8vh;
+    left:40vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp4 {
+    display:none;
+    position:absolute;
+    top:22vh;
+    left:40vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp5 {
+    display:none;
+    position:absolute;
+    top:36vh;
+    left:40vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp33 {
+    display:none;
+    position:absolute;
+    top:8vh;
+    left:5vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+#network-popUp44 {
+    display:none;
+    position:absolute;
+    top:22vh;
+    left:5vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+#network-popUp55{
+    display:none;
+    position:absolute;
+    top:36vh;
+    left:5vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+#network-popUp1a {
+    display:none;
+    position:absolute;
+    top:3vh;
+    left:5vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp1b {
+    display:none;
+    position:absolute;
+    top:3vh;
+    left:35vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp2a {
+    display:none;
+    position:absolute;
+    top:15vh;
+    left:5vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp2b {
+    display:none;
+    position:absolute;
+    top:15vh;
+    left:35vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp3a {
+    display:none;
+    position:absolute;
+    top:27vh;
+    left:5vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp3b {
+    display:none;
+    position:absolute;
+    top:27vh;
+    left:35vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp4a {
+    display:none;
+    position:absolute;
+    top:40vh;
+    left:5vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp4b {
+    display:none;
+    position:absolute;
+    top:40vh;
+    left:35vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+#network-popUp5a {
+    display:none;
+    position:absolute;
+    top:40vh;
+    left:5vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+#network-popUp5b {
+    display:none;
+    position:absolute;
+    top:40vh;
+    left:35vw;
+    z-index:234;
+    width:300px;
+    height:48px;
+    background-color: #f9f9f9;
+    border-style:solid;
+    border-width:3px;
+    border-color: #5394ed;
+    padding:5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}

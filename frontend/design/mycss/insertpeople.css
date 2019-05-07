@@ -1,0 +1,25 @@
+body {
+    background-color: #d9dcdf;
+}
+a {
+    display: block;
+}
+.button {
+    background-color: rgb(165, 193, 253); /*  */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttonsave {border-radius: 20%;}
+
+
+/*//////////////////////////////////////////////////////////////////////////*/
+
+.btn-glyphicon { padding:8px; background:#ffffff; margin-right:4px; }
+.icon-btn { padding: 1px 15px 3px 2px; border-radius:50px;}

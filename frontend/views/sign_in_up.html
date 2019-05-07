@@ -1,0 +1,52 @@
+<link href="../design/mycss/sign_in_up.css" rel="stylesheet">
+<link href="../design/mycss/definebutton.css" rel="stylesheet">
+<script src="../design/mycontroller/sign_in_up.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="col-sm-9">
+
+        <div id="logbox">
+                <center>
+
+                <form>
+                    <h1>account login</h1>
+                    <input type="text" ng-model="userText" placeholder="enter your ID" class="input pass" />
+                    <input type="password" ng-model="passText" placeholder="enter your password" required="required" class="input pass" />
+                    <input ng-click="login()"  ng-model="loginButton" type="submit" value="Sign me in!" class="inputButton" />
+                    <div class="text-center">
+                        <a>forgot password</a>
+                    </div>
+                </form>
+            <div class="text-center">
+                you need to register?
+                <input ng-model="myVar" type="checkbox"></input>
+
+                <!--input class="btn btn-info btn-md btn3d"  ng-model="myChange" type="button" value="login"></input></label></h1>
+
+                <!--button  class="btn btn-info btn-md btn3d" ng-model="myChange" id="login_id">login</button-->
+            </div>
+        </center>
+
+        </div>
+
+    </div>
+
+    <div  ng-show="myVar" class="col-sm-9">
+        <div id="logbox">
+                <form>
+                    <h1>create an account</h1>
+                    <input type="text" placeholder="What's your username?" pattern="^[\w]{3,16}$" autofocus="autofocus" required="required"
+                        class="input pass" />
+                    <input type="password" placeholder="Choose a password" required="required" class="input pass" />
+                    <input type="password" placeholder="Confirm password" required="required" class="input pass" />
+                    <input type="email" placeholder="Email address" class="input pass" />
+                    <!-----check email /if exist update their password ------>
+                    <input ng-click="" type="submit" value="Sign me up!" class="inputButton" />
+    
+                </form>
+        </div>
+    </div>
+</div>

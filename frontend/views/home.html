@@ -1,0 +1,208 @@
+<link href="../design/mycss/home.css" rel="stylesheet">
+<script src="../design/mycontroller/home.js"></script>
+<link href="../design/mycss/definebutton.css" rel="stylesheet">
+<link rel="stylesheet" href="../vendor/fonts/glyphicons-halflings-regular.ttf">
+
+<div class="container">
+  <div class="row">
+    <center>
+      <body ng-app="myApp" ng-controller="controllerSetting">
+      <h1>{{a}}{{b}}</h1>
+      <h3>{{c}}{{d}}</h3>
+      </h4>{{e}}{{f}}</h4>
+    </body>
+    </center>
+    <div class="col-sm-12">
+      <div class="center material-button-anim">
+        <div class="option list-inline">
+          <button ui-sref="autoevaluation" class="material-button " type="button">
+            <span class="fa fa-" aria-hidden="true">evaluate yourself</span>
+          </button>
+          <button ui-sref="" class="material-button	" type="button">
+            <span class="fa fa-" aria-hidden="true">rate your Boss</span>
+          </button>
+          <button ng-if="result.AppRole_ID != 3" ng-click="loginAdmin()" class="material-button " type="button">
+              <span class="fa fa-" aria-hidden="true">management</span>
+            </button>
+          <!--button onclick="myFunction()" class="material-button " type="button">
+            <span class="fa fa-" aria-hidden="true">management</span>
+          </button-->
+           <!--button onclick="myFunction(),myFunction2(this)" class="material-button fa fa-thumbs-up  " type="button">
+              <span class="fa fa-" aria-hidden="true">manage ment</span>
+              <!--input ng-model="myVar" type="checkbox"></input>
+            </button-->
+         
+
+        </div>
+      </div>
+
+      <!--div id="myDIV" style="display:none;">
+        <div class="">
+          <h1>enter password
+            <input type="text"></input>
+            <button ng-click="loginAdmin();" ng-model="loginAdmin" ui-sref="ceopage" type="button" class="btn btn-info btn-md btn3d">start</button>
+          </h1>
+        </div>
+      </div-->
+    </div>
+  </div>
+  <!--center>
+  <div class="form-group bs-calltoaction bs-calltoaction-info">
+    <div class="row">
+      <div class="col-sm-12 cta-contents">
+        <button type="button" class="btn btn-info btn-md">I Am Admin:
+          <label class="btn btn-primary active">
+            <input ng-model="myVar" type="checkbox"></input>
+          </label>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-10 cta-contents">
+      <h1 ng-show="myVar">enter password
+        <input type="text"></input>
+        <button ui-sref="ceopage" type="button" class="btn btn-info btn-md btn3d">start</button>
+      </h1>
+    </div>
+  </div>
+</center-->
+</div>
+
+
+<!--link href="../design/mycss/definebutton.css" rel="stylesheet">
+<link href="../design/mycss/admin.css" rel="stylesheet">
+<link href="../design/mycss/login.css" rel="stylesheet">
+<div class="container">
+  <div class="row main">
+    <div class="main-login main-center">
+      
+      <form class="" method="post" action="#">
+              <center>
+                        <h3>evaluate yourself</h3>
+                <div class="form-group ">
+                        <button ui-sref="autoevaluation" type="button" class="btn btn-primary btn-lg btn3d">
+                                    <span class="glyphicon glyphicon-ok"></span>EVALUATE</button>
+                              <!--a href="https://ccp.cloudaccess.net/aff.php?aff=5188" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a-->
+<!--/////////////////////////////////////
+                            </div>
+                        <hr class="colorgraph">
+
+                            <h3>evaluate other</h3>
+
+                        </center>
+        <div class="form-group bs-calltoaction bs-calltoaction-info">
+          <div class="row">
+            <div class="col-sm-8 cta-contents">
+              <h1 class="cta-title">I Am Admin:
+                <label class="btn btn-primary active">
+                  <input ng-model="myVar" type="checkbox"></input>
+                </label>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="row">
+            <div class="col-sm-10 cta-contents">
+              <h1 ng-show="myVar">enter password
+                <input type="text"></input>
+                <button ui-sref="ceopage" type="button" class="btn btn-info btn-md btn3d">start</button>
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <!--div class="form-group">
+            <label for="name" class="cols-sm-2 control-label">Your Name</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="cols-sm-2 control-label">Your Email</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">Username</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="cols-sm-2 control-label">Password</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+              </div>
+            </div>
+          </div-->
+
+<!--///////////////////////////////////////////////////      
+
+      </form>
+    </div>
+  </div>
+</div>
+<!--center>
+        <div class="container">
+                <div class="col-sm-8">
+                        <br>
+                        <br>
+                        <br>
+                        <center>
+                                <button ui-sref="autoevaluation" type="button" class="btn btn-primary btn-lg btn3d">
+                                        <span class="glyphicon glyphicon-ok"></span>EVALUATE</button>
+                        </center>
+                        <div class="bs-calltoaction bs-calltoaction-primary">
+                                <div class="row">
+                                                <div class="col-sm-8 cta-contents">
+                                                        <h1 class="cta-title">I Am Admin:
+                                                                <label class="btn btn-primary active">
+                                                                        <input ng-model="myVar" type="checkbox"></input>
+                                                                </label>
+                                                        </h1>
+                                                </div>
+                                        </div>
+                                </div>
+ <div class="bs-calltoaction bs-calltoaction-info">
+                                <div class="row">
+                                        <div class="col-sm-10 cta-contents">
+                                                <h1 ng-show="myVar">enter password
+                                                        <input type="text"></input>
+                                                        <button ui-sref="ceopage" type="button" class="btn btn-info btn-md btn3d">start</button>
+                                                </h1>
+                                        </div>
+                                </div>
+                        </div>
+                       
+                        <!--hr class="colorgraph"-->
+<!--////////////////////////////////////////////////
+                </div>
+        </div>
+</center>

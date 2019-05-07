@@ -1,0 +1,138 @@
+<!-- https://bootsnipp.com/snippets/featured/simple-user-profile 
+
+IN GHASHANGTARE ENGAR 
+
+-->
+
+<body>
+
+
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="../design/mycss/insertpeople.css" rel="stylesheet">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  <!------ Include the above in your HEAD tag ---------->
+
+
+  <form class="form-horizontal">
+    <center>
+      <form>
+      <fieldset>
+
+        <!-- Form Name -->
+        <legend><i class="fa fa-user-plus" style="font-size:24px;color:blue"></i> create profile <i class="fa fa-user-plus" style="font-size:24px;color:blue"></i>
+        </legend>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label" for="textinput">Employee ID</label>
+          <div class="controls">
+            <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input-xlarge" required="">
+          </div>
+        </div>
+        <br>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label" for="textinput">Employee Name</label>
+          <div class="controls">
+            <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input-xlarge" required="">
+
+          </div>
+        </div>
+        <br>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label" for="textinput">Email</label>
+          <div class="controls">
+            <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input-xlarge">
+          </div>
+        </div>
+        <br>
+        <!-- Select Basic -->
+        <div class="control-group">
+          <label class="control-label" for="selectbasic">Department</label>
+          <div class="controls">
+            <select id="selectbasic" name="selectbasic" class="input-xlarge">
+              <option>department A</option>
+              <option>department B</option>
+              <option>get from DB</option>
+            </select>
+            <input type="button" class="buttonsave" value="Add">
+
+          </div>
+        </div>
+        <br>
+
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label" for="textinput">Role Group</label>
+          <div class="controls">
+            <select id="selectbasic" name="selectbasic" class="input-xlarge">
+              <option>Role A</option>
+              <option>Role B</option>
+              <option>get from DB</option>
+            </select>
+            <input type="button" class="buttonsave"  value="Add"><a href="addnewRolGr.html "></a></input>
+
+          </div>
+        </div>
+        <br>
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label" for="textinput">Role</label>
+          <div class="controls">
+            <select id="selectbasic" name="selectbasic" class="input-xlarge">
+              <option>RoleGroup A</option>
+              <option>RoleGroup B</option>
+              <option>get from DB</option>
+            </select>
+            <input type="button" class="buttonsave" value="Add">
+
+
+          </div>
+
+        </div>
+        <br>
+
+
+        <!-- File Button -->
+        <div class="control-group">
+          <label class="control-label" for="filebutton">model your department fast</label>
+          <div class="controls">
+
+            <input id="filebutton" name="filebutton" class="input-file" type="file">
+
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- 
+<!-- if you need Textarea --
+<div class="control-group">
+<label class="control-label" for="textarea">Details</label>
+<div class="controls">                     
+  <textarea id="textarea" name="textarea" placeholder="..."></textarea>
+</div>
+</div>
+-->
+        <!-- Button -->
+        <div class="control-group">
+          <label class="control-label" for="singlebutton"></label>
+          <div class="controls">
+            <button id="singlebutton" name="singlebutton" ng-click="addItem()" class="buttonsave"><a href="">save <i class="fa fa-file"></i></a></button>
+
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    </center>
+  </form>
+</body>

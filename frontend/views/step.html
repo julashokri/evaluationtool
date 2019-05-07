@@ -1,0 +1,232 @@
+<!------------https://bootsnipp.com/snippets/ZVXDM------------>
+
+<link href="../design/mycss/step.css" rel="stylesheet">
+<link href="../design/mycss/defineproject.css" rel="stylesheet">
+<link href="../design/mycss/definebutton.css" rel="stylesheet">
+<script src="../design/mycontroller/step.js"></script>
+
+<div class="container">
+    <div class="stepwizard">
+        <div class="stepwizard-row setup-panel">
+            <div class="stepwizard-step">
+                <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                <p>Define Project</p>
+            </div>
+            <div class="stepwizard-step">
+                <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                <p>Define Task</p>
+            </div>
+            <div class="stepwizard-step">
+                <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                <p>Define Team</p>
+            </div>
+        </div>
+    </div>
+    <form role="form">
+        <div class="row setup-content" id="step-1">
+            <div class="col-xs-12">
+                <div class="col-md-12">
+
+                    <section id="contact">
+                        <div class="section-content1">
+                            <h1 class="section-header">Step
+                                <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">1</span>
+                            </h1>
+                        </div>
+                        <div class="contact-section">
+                            <div class="container">
+                                <form>
+                                    <div class="col-md-6 form-line">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername">name</label>
+                                            <input type="text" class="form-control" placeholder=" Enter  project Name" ng-model="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="date">Start Date</label>
+
+                                            <div class="input-group date" data-date="12-02-2017" data-date-format="mm-dd-yyyy">
+                                                <input required="required" ng-model="sDate" class="form-control" type="date">
+                                                <span class="input-group-addon btn">
+                                                    <i class="glyphicon glyphicon-calendar"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="date">End Date</label>
+                                            <div class="input-group datepicker" data-date="12-02-2017" data-date-format="mm-dd-yyyy">
+                                                <input required="required" ng-model="eDate" class="form-control" type="date">
+                                                <span class="input-group-addon btn">
+                                                    <i class="glyphicon glyphicon-calendar"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="controls">
+                                                    <select ng-model="manager" ng-options="item.name for item in managers" class="input-xlarge"></select>
+                                                    <label for="node-label" id="popup-node-id">selectmanager</label>
+                                                    <button ng-click="addNewProject()" type="button" class="btn btn-magick btn-md btn3d">ADD</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="description">description</label>
+                                            <textarea class="form-control" placeholder="please write a summary description" ng-model="description"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <button ui-sref="ceopage" type="button" class="btn btn-magick btn-md btn3d">home</button>
+                                            <button class="btn btn-magick nextBtn btn-md btn3d" type="button">Next</button>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="row setup-content" id="step-2">
+            <div class="col-xs-12">
+                <div class="col-md-12">
+                    <section id="contact">
+                        <div class="section-content1">
+                            <h1 class="section-header">Step
+                                <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">2</span>
+
+                            </h1>
+                        </div>
+                        <div class="contact-section">
+                            <div class="container">
+                                <form>
+                                    <div class="col-md-6 form-line">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername">name</label>
+                                            <input type="texttask" class="form-control" placeholder=" Enter  task Name" ng-model="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="date">Start Date</label>
+                                            <div class="input-group date" data-date="12-02-2017" data-date-format="mm-dd-yyyy">
+                                                <input ng-model="sDate" class="form-control" type="date">
+                                                <span class="input-group-addon btn">
+                                                    <i class="glyphicon glyphicon-calendar"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="date">End Date</label>
+                                            <div class="input-group datepicker" data-date="12-02-2017" data-date-format="mm-dd-yyyy">
+                                                <input ng-model="eDate" class="form-control" type="date">
+                                                <span class="input-group-addon btn">
+                                                    <i class="glyphicon glyphicon-calendar"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!--/div>
+                                    <div class="col-md-6 form-line"-->
+                                        <span class="has-float-label">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="controls">
+                                                        <select ng-model="project" ng-options="item.name for item in projects" class="input-xlarge"></select>
+                                                        <label for="node-label" id="popup-node-id">selectproject</label>
+                                                        <button ng-click="addNewTask()" type="button" class="btn btn-magick btn-md btn3d">ADD</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </span>
+                                    </div>
+                                    <div class="col-md-6 form-line">
+                                            <div class="form-group">
+                                                    <button ui-sref="ceopage" type="button" class="btn btn-magick btn-md btn3d">home</button>
+                                                    <button class="btn btn-magick nextBtn btn-md btn3d" type="button">NEXT(team)</button>
+    
+                                                </div>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="row setup-content" id="step-3">
+            <div class="col-sm-12">
+                <div class="col-md-12">
+                    <section id="contact">
+
+                        <div class="section-content1">
+                            <h1 class="section-header">Step
+                                <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">3</span>
+                            </h1>
+                        </div>
+                        <div class="contact-section">
+                            <div class="container">
+                                <form>
+                                    <div class="col-md-6 form-line">
+
+                                        <!--span class="has-float-label"-->
+
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="controls">
+                                                    <select ng-model-options="{ updateOn: 'change', debounce: { change: 0 } }" ng-change="changeTask_emp(project.ID)" ng-model="project"
+                                                        ng-options="item.name for item in projects" class="input-xlarge"></select>
+                                                    <label for="node-label" id="popup-node-id">selectproject</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="controls">
+                                                    <select ng-model="task" ng-options="item.name for item in tasks" class="input-xlarge"></select>
+                                                    <label for="node-label" id="popup-node-id">selecttask</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button ng-click="addNewTeam()" type="button" class="btn btn-magick btn-md btn3d">
+                                                <span class="glyphicon glyphicon-thumbs-up"></span>ADD
+                                            </button>
+                                        </div>
+                                        <!--div class="col-md-3 col-mod-offset-3">
+                                                                <select ng-model="employee" ng-options="item.name for item in employees" class="input-xlarge"></select>
+                                                                <label for="node-label" id="popup-node-id">select/employee</label>
+                                                            </div-->
+                                    </div>
+                                    <div class="col-md-6 form-line">
+
+                                        <div class="form-group">
+                                            <!--table ng-controller="myCtrl" border="1">
+                                                        <tr ng-repeat="x in records">
+                                                          <td>{{x.Name}}</td>
+                                                          <td>{{x.Country}}</td>  
+                                                        </tr>
+                                                        </table-->
+                                            <label ng-repeat="employee in employees">
+                                                <label>
+                                                    <input type="checkbox" ng-model="checkEmployees.selected[employee.ID]"> {{employee.name}}</label>
+                                            </label>
+                                            <div class="form-group">
+                                                    <button ui-sref="ceopage" type="button" class="btn btn-magick btn-md btn3d">home</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--/span-->
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
